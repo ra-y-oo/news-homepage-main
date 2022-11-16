@@ -1,0 +1,84 @@
+:root {
+  --off-white: hsl(36, 100%, 99%);
+  --grayishblue: hsl(233, 8%, 79%);
+  --darkgrayishblue: hsl(236, 13%, 42%);
+  --verydarkblue: #00001a;
+  --softorange: #e9ab53;
+  --softred: hsl(5, 85%, 63%);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+section.header {
+  margin-bottom: 50px;
+}
+section.header img {
+  max-width: 340px;
+}
+section.header h1 {
+  color: var(--verydarkblue);
+  font-size: 2.8rem;
+}
+section.header p {
+  color: var(--darkgrayishblue);
+}
+section.header .btn {
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: var(--softred);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section.header .btn a {
+  text-decoration: none;
+  color: var(--off-white);
+  font-weight: 700;
+}
+section.header .btn:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+div.middle {
+  background-color: #00001a;
+  padding: 20px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+div.middle h1 {
+  color: var(--softorange);
+  font-size: 2rem;
+}
+div.middle h2 {
+  font-size: 1.2rem;
+}
+div.middle p {
+  color: var(--grayishblue);
+}
+
+section.bottom .container {
+  margin-bottom: 20px;
+}
+section.bottom .container .left {
+  float: left;
+}
+section.bottom .container .left img {
+  width: 70%;
+}
+section.bottom .container .right h1 {
+  color: var(--darkgrayishblue);
+  font-size: 2rem;
+}
+section.bottom .container .right h2 {
+  color: var(--verydarkblue);
+  font-weight: bolder;
+}/*# sourceMappingURL=style.css.map */
