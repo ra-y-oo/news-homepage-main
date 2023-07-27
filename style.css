@@ -1,0 +1,79 @@
+:root {
+  /* Primary */
+  --clr-soft-orange: hsl(35, 77%, 62%);
+  --clr-soft-red: hsl(5, 85%, 63%);
+  /* Neutral */
+  --clr-off-white: hsl(36, 100%, 99%);
+  --clr-grayish-blue: hsl(233, 8%, 79%);
+  --clr-dark-grayish-blue: hsl(236, 13%, 42%);
+  --clr-very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  max-width: 100%;
+}
+
+body {
+  background: var(--clr-off-white);
+}
+
+* p {
+  font-size: 15px;
+}
+
+/* MOBILE NAV */
+/* HERO STYLES */
+article {
+  padding: 1.5rem;
+  max-width: 80%;
+}
+article .hero-txt {
+  color: var(--clr-dark-grayish-blue);
+}
+article .hero-txt h1 {
+  font-weight: 800;
+  color: var(--clr-very-dark-blue);
+  margin-bottom: 0.5rem;
+}
+article .hero-txt p {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+article .hero-txt button {
+  background: var(--clr-soft-red);
+  border: none;
+  padding: 10px 20px;
+  color: var(--clr-off-white);
+  font-weight: bold;
+  cursor: pointer;
+}
+article .card-lg {
+  background: var(--clr-very-dark-blue);
+  color: white;
+  padding: 1rem;
+}
+article .card-lg h1 {
+  color: var(--clr-soft-orange);
+}
+article .card-lg h4 {
+  margin: 0.5rem 0;
+}
+article .card-lg p {
+  line-height: 1.5;
+  color: var(--clr-dark-grayish-blue);
+}
+article .card-lg hr {
+  width: 100%;
+  margin: 1rem auto;
+  border: 0.1px solid rgba(255, 255, 255, 0.2);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
