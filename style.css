@@ -25,6 +25,10 @@ body {
   font-size: 15px;
 }
 
+.nav-links {
+  display: none;
+}
+
 .desk-img {
   display: none;
 }
@@ -146,4 +150,78 @@ article .card-lg hr {
 .flex .flex-item p {
   color: var(--clr-dark-grayish-blue);
   line-height: 1.5;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-img {
+    display: none;
+  }
+  .desk-img {
+    display: block;
+    width: 90%;
+  }
+  .navbar {
+    padding: 1rem 4rem;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--clr-dark-grayish-blue);
+  }
+  .nav-links a:hover {
+    color: var(--clr-soft-red);
+  }
+  .menu-btn {
+    display: none;
+  }
+  dialog {
+    display: none;
+  }
+  .hero-flex {
+    display: flex;
+    padding: 0 2rem;
+  }
+  .hero-flex .hero-txt {
+    display: flex;
+    gap: 8rem;
+    margin-top: 2rem;
+    flex: 1;
+  }
+  .hero-flex .hero-txt h1 {
+    font-size: 2.8rem;
+    width: 60%;
+  }
+  .hero-flex .hero-txt p {
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+  .hero-flex .hero-txt button:hover {
+    background: var(--clr-very-dark-blue);
+  }
+  .hero-flex .hero-right h1 {
+    font-size: 3.5rem;
+  }
+  .hero-flex .hero-right h4 {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .hero-flex .hero-right h4:hover {
+    color: var(--clr-soft-orange);
+  }
+  .flex {
+    flex-direction: row;
+    padding: 0 2rem;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .flex img {
+    width: 170px;
+  }
+  .flex h3:hover {
+    cursor: pointer;
+    color: var(--clr-soft-red);
+  }
 }/*# sourceMappingURL=style.css.map */

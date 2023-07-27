@@ -27,6 +27,9 @@ body{
 * p{
     font-size: 15px;
 }
+.nav-links{
+    display: none;
+}
 .desk-img{
     display: none;
 }
@@ -146,6 +149,82 @@ article{
         p{
             color: var(--clr-dark-grayish-blue);
             line-height: 1.5;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .mobile-img{
+        display: none;
+    }
+    .desk-img{
+        display: block;
+        width: 90%;
+    }
+    .navbar{
+        padding: 1rem 4rem;
+    }
+    .nav-links{
+        display: flex;
+        gap: 2rem;
+        a{
+            text-decoration: none;
+            color: var(--clr-dark-grayish-blue);
+        }
+        a:hover{
+            color: var(--clr-soft-red);
+        }
+    }
+    .menu-btn{
+        display: none;
+    }
+    dialog{
+        display: none;
+    }
+
+    .hero-flex{
+        display: flex;
+        padding: 0 2rem;
+        .hero-txt{
+            display: flex;
+            gap: 8rem;
+            margin-top: 2rem;
+            flex: 1;
+            h1{
+                font-size: 2.8rem;
+                width: 60%;
+            }
+            p{
+                margin-bottom: 2rem;
+                width: 80%;
+            }
+            button:hover{
+                background: var(--clr-very-dark-blue);
+            }
+        }
+        .hero-right{
+            h1{
+                font-size: 3.5rem;
+            }
+            h4{
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+            h4:hover{
+                color: var(--clr-soft-orange);
+            }
+        }
+    }
+    .flex{
+        flex-direction: row;
+        padding: 0 2rem;
+        align-items: baseline;
+        justify-content: center;
+        img{
+            width: 170px;
+        }
+        h3:hover{
+            cursor: pointer;
+            color: var(--clr-soft-red);
         }
     }
 }
