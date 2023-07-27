@@ -25,11 +25,51 @@ body {
   font-size: 15px;
 }
 
+.desk-img {
+  display: none;
+}
+
 /* MOBILE NAV */
+.navbar {
+  padding: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+dialog {
+  border: none;
+  position: relative;
+  margin-left: 30%;
+  width: 70%;
+  height: 100vh;
+  background: white;
+}
+dialog button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+dialog .nav-items {
+  margin: 50% 0;
+}
+dialog a {
+  text-decoration: none;
+  color: var(--clr-very-dark-blue);
+  display: block;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
 /* HERO STYLES */
 article {
   padding: 1.5rem;
-  max-width: 80%;
+  /*     max-width: 80%; */
 }
 article .hero-txt {
   color: var(--clr-dark-grayish-blue);
@@ -38,6 +78,7 @@ article .hero-txt h1 {
   font-weight: 800;
   color: var(--clr-very-dark-blue);
   margin-bottom: 0.5rem;
+  font-size: 2.8rem;
 }
 article .hero-txt p {
   line-height: 1.5;
@@ -46,21 +87,24 @@ article .hero-txt p {
 article .hero-txt button {
   background: var(--clr-soft-red);
   border: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   color: var(--clr-off-white);
-  font-weight: bold;
   cursor: pointer;
+  letter-spacing: 0.3ch;
 }
 article .card-lg {
   background: var(--clr-very-dark-blue);
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 article .card-lg h1 {
   color: var(--clr-soft-orange);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
 }
 article .card-lg h4 {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  font-weight: 700;
 }
 article .card-lg p {
   line-height: 1.5;
@@ -74,6 +118,32 @@ article .card-lg hr {
 
 .flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 1.5rem;
+  gap: 1rem;
+  /*   max-width: 80%; */
+}
+.flex .flex-item {
+  display: flex;
+  gap: 1rem;
+}
+.flex .flex-item img {
+  flex: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.flex .flex-item .img-2 {
+  width: 170px;
+}
+.flex .flex-item h1 {
+  color: var(--clr-dark-grayish-blue);
+  margin-bottom: 0.5rem;
+}
+.flex .flex-item h3 {
+  color: var(--clr-very-dark-blue);
+  margin-bottom: 0.5rem;
+}
+.flex .flex-item p {
+  color: var(--clr-dark-grayish-blue);
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */
